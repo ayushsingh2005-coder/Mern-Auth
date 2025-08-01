@@ -1,0 +1,59 @@
+THIS IS JWT AUTHENTICATION SYSTEM WITH Password reset , Email Verification using OTP
+
+Install these packages first 
+JWT
+bcrypt
+express
+nodemon
+cors
+dotenv
+nodemailer
+
+We will follow these path to create it :
+
+1. create the express server 
+2.write the function for database (here we use mongoDB ) then call it in the main server(server.js)
+
+2.Write the User model (his name , password etc)
+
+3.write the contoller function in authController.js(logic)
+
+4.setup the routes(create the routes)
+
+5.now use nodemailer (a NODE js ) library to send the email from the backend server 
+
+we use a third part email service provider "Brevo" so that we don't need to manage the email infrastructure on our own
+
+6.create all the controller function for all the routes and other functions 
+
+7.we are using userId that we destructure from req body ,actually we get the userId from the token that we generate using JWT and then we send in the cookies.
+we'll use middleware function
+
+///// FRONTEND 
+
+install react vite in your folder npm create vite@latest
+then install all the required packages for the react project 
+
+command : npm install axios react-router-dom react-toastify
+
+axios : for API call from the backend or  to make HTTP requests to your backend (e.g., login, register).
+react-router-dom : using this package we can create routes in our project
+react-tostify : used to display the notification on the webpage
+
+also use extension : es7 react/redux/graph for shorter snippet in your .jsx file 
+
+config taiwind in your project from official website .
+
+Tips to learn :
+
+//in Tailwind Css
+
+In Tailwind CSS, we use group when we want to apply hover, focus, or other state-based styles to child elements based on the state of a parent element.
+
+Add group to the parent.
+Use group-hover: (or group-focus:, etc.) on the child.
+
+
+
+
+
